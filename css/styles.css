@@ -311,28 +311,28 @@ footer ==================================================================
   padding-bottom: 60px;
 }
 
-.contacts-footer {
+.contacts-list {
   list-style: none;
   margin-top: 20px;
 }
 
-.contacts-footer > li {
+.contacts-list > li {
   display: flex;
   height: 21px;
 }
-.contacts-footer > li:not(:last-child) {
+.contacts-list > li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts-footer .contact,
-.contacts-footer address {
+.contacts-list .contact,
+.contacts-list address {
   font-style: normal;
   text-decoration: none;
 }
-.contacts-footer .contact {
+.contacts-list .contact {
   color: var(--footer-contacts-color);
 }
-.contacts-footer .contact:hover,
-.contacts-footer .contact:focus {
+.contacts-list .contact:hover,
+.contacts-list .contact:focus {
   color: var(--brand-color);
 }
