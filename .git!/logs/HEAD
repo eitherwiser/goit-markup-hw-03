@@ -1,2 +1,0 @@
-0000000000000000000000000000000000000000 20dc25b2bc304f2efbe1f245a93d0d42efd0a201 Andrew Yatsutko <eitherwiser@gmail.com> 1614940502 +0200	clone: from https://github.com/eitherwiser/goit-markup-hw-02.git
-20dc25b2bc304f2efbe1f245a93d0d42efd0a201 392db3c3654e3fd662344f02149dded64262d19f Andrew Yatsutko <eitherwiser@gmail.com> 1614978051 +0200	commit: make .container, margins and paddings reset
