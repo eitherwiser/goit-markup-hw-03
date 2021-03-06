@@ -1,6 +1,6 @@
-* {
+/** {
   outline: 1px solid rgba(128, 128, 0, 0.2);
-}
+}*/
 
 :root {
   --logo-font: "Raleway", sans-serif;
@@ -322,12 +322,12 @@ portfolio main ==========================================================
 }*/
 
 /*/*/ /*/*/ /*/*/ /*/*/ /*/*/ /*/*/ /*/*/
-.exemple-gallery > li:nth-child(3n) {
+/*.exemple-gallery > li:nth-child(3n) {
   margin-right: 0px;
 }
 .exemple-gallery > li:nth-child(n + 6) {
   margin-bottom: 0px;
-}
+}*/
 /*/*/ /*/*/ /*/*/ /*/*/ /*/*/ /*/*/ /*/*/
 
 .exemple-gallery > li {
