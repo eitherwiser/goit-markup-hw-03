@@ -1,6 +1,6 @@
-* {
+/** {
   outline: 1px solid rgba(128, 128, 0, 0.2);
-}
+}*/
 
 :root {
   --logo-font: "Raleway", sans-serif;
@@ -270,9 +270,7 @@ portfolio main ==========================================================
 
 /*buttons*/
 .exemples-container .filter-buttons {
-  display: flex;
   list-style: none;
-  padding: 0;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -282,6 +280,7 @@ portfolio main ==========================================================
 }
 
 .filter-buttons button {
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -289,7 +288,6 @@ portfolio main ==========================================================
   letter-spacing: 0.03em;
   text-align: center;
   align-items: center;
-  font-family: var(--main-font);
   border-style: hidden;
   border-radius: 4px;
   cursor: pointer;
@@ -310,7 +308,6 @@ portfolio main ==========================================================
 
 /*exemple-gallery*/
 .exemple-gallery {
-  display: flex;
   flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
@@ -319,7 +316,6 @@ portfolio main ==========================================================
 }
 
 .exemple-gallery > li {
-  display: flex;
   max-width: 370px;
   max-height: 404px;
   background: var(--white-color);
@@ -332,19 +328,14 @@ portfolio main ==========================================================
 }
 
 .exemple-gallery .link {
-  display: flex;
-  /*flex-wrap: nowrap;*/
   flex-direction: column;
   text-decoration: none;
   color: var(--main-color);
-  margin: 0;
-  padding: 0;
   max-width: 370px;
   max-height: 404px;
 }
 
 .link img {
-  display: flex;
   max-width: 370px;
   max-height: 294px;
   margin: -1px;
@@ -352,8 +343,6 @@ portfolio main ==========================================================
 
 /*content*/
 .exemple-gallery .exemple-content {
-  flex-direction: column;
-  align-items: baseline;
   padding: 20px 24px;
 }
 .exemple-gallery h3 {
@@ -391,7 +380,6 @@ footer ==================================================================
 }
 
 .contacts-list > li {
-  display: flex;
   height: 21px;
 }
 .contacts-list > li:not(:last-child) {
