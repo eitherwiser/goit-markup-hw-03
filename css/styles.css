@@ -226,13 +226,14 @@ index main ==============================================================
 }
 
 .hero-container button {
+  padding: 10px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  height: 38px; /* ! if reset it became 32px  and section is narrowed*/
 }
 
 .buttun-order {
+  display: inline-block;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -246,6 +247,7 @@ index main ==============================================================
   cursor: pointer;
   color: var(--white-color);
   background-color: var(--brand-color);
+  box-shadow: var(--btn-shadow);
 }
 
 /*features*/
@@ -271,7 +273,7 @@ index main ==============================================================
 .features-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -281,10 +283,10 @@ index main ==============================================================
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.72;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   width: 270px;
-  height: 75px; /* !!! if reset this - block will be 72px and section is narrowed */
+
   color: var(--main-gray-color);
 }
 
@@ -330,7 +332,8 @@ index main ==============================================================
   padding-bottom: 30px;
 }
 
-.team-title {
+.team-title,
+.team-text {
   justify-content: center;
   font-weight: 500;
   font-size: 16px;
@@ -339,9 +342,8 @@ index main ==============================================================
   margin-bottom: 10px;
 }
 .team-text {
-  justify-content: center;
+  font-weight: 400;
   color: var(--main-gray-color);
-  text-align: center;
 }
 
 /*
@@ -425,14 +427,16 @@ portfolio main ==========================================================
   padding: 20px 24px;
 }
 .exemple-gallery h3 {
+  font-weight: 700;
+  font-size: 18px;
   line-height: 2;
-  height: 36px; /* ! if reset - it become 32px */
   display: block;
   margin-bottom: 4px;
 }
 .exemple-gallery p {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.9;
-  height: 30px; /* ! if reset - it become 26px */
   color: var(--main-gray-color);
 }
 
@@ -443,7 +447,7 @@ footer ==================================================================
   color: var(--white-color);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   background-color: var(--background-dark-color);
 }
@@ -468,7 +472,6 @@ footer ==================================================================
 .contacts-list address {
   font-style: normal;
   text-decoration: none;
-  max-height: 21px; /* ! if reset - it become 23px */
 }
 .contacts-list .contact {
   color: var(--footer-contacts-color);
