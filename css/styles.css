@@ -1,6 +1,6 @@
-/** {
+* {
   outline: 1px solid rgba(128, 128, 0, 0.2);
-}*/
+}
 
 :root {
   --logo-font: "Raleway", sans-serif;
@@ -67,6 +67,7 @@ li {
 /*container*/
 .container {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -100,7 +101,6 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -130,7 +130,6 @@ header {
 }
 
 header .container {
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -147,8 +146,6 @@ header .container {
   line-height: 1.15;
   letter-spacing: 0.02em;
   font-style: normal;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .navigation-list > li:not(:last-child),
@@ -228,21 +225,16 @@ index main ==============================================================
 
 .hero-container button {
   padding: 10px 32px;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .buttun-order {
-  display: inline-block;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
-  align-items: center;
-  width: auto;
   border-style: hidden;
   border-radius: 4px;
   cursor: pointer;
@@ -253,7 +245,6 @@ index main ==============================================================
 
 /*features*/
 .features-container {
-  flex-wrap: wrap;
   padding-top: var(--big-padding);
   padding-bottom: var(--big-padding);
 }
@@ -264,8 +255,6 @@ index main ==============================================================
 }
 
 .features-list > li {
-  flex-wrap: wrap;
-  flex-direction: column;
   width: 270px;
   margin-left: var(--list-gap);
   flex-basis: calc(100% / 4);
@@ -277,7 +266,6 @@ index main ==============================================================
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 10px;
 }
 .features-text {
@@ -287,13 +275,11 @@ index main ==============================================================
   line-height: 1.8;
   letter-spacing: 0.03em;
   width: 270px;
-
   color: var(--main-gray-color);
 }
 
 /*specialization*/
 .specialization-container {
-  flex-wrap: wrap;
   flex-direction: column;
   padding-bottom: var(--big-padding);
 }
@@ -304,7 +290,6 @@ index main ==============================================================
 
 /*team*/
 .team-container {
-  flex-wrap: wrap;
   padding-top: var(--big-padding);
   padding-bottom: var(--big-padding);
 }
@@ -318,9 +303,7 @@ index main ==============================================================
 }
 
 .team-list > li {
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 270px;
+  width: auto;
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--box-shadow);
   margin-left: var(--list-gap);
@@ -338,14 +321,12 @@ index main ==============================================================
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   margin-bottom: 10px;
 }
 .team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   justify-content: center;
   color: var(--main-gray-color);
 }
@@ -376,12 +357,9 @@ portfolio main ==========================================================
   font-size: 16px;
   line-height: 1.67;
   letter-spacing: 0.03em;
-  text-align: center;
-  align-items: center;
   border-style: hidden;
   border-radius: 4px;
   cursor: pointer;
-  width: auto;
   padding: 6px 22px;
   color: var(--main-color);
   background-color: var(--background-gray-color);
@@ -398,8 +376,6 @@ portfolio main ==========================================================
 /*exemple-gallery*/
 .exemple-gallery {
   flex-wrap: wrap;
-  margin: 0px;
-  padding: 0px;
   margin-top: calc(-1 * var(--list-gap));
   margin-left: calc(-1 * var(--list-gap));
 }
