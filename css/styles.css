@@ -1,6 +1,6 @@
-* {
+/** {
   outline: 1px solid rgba(128, 128, 0, 0.2);
-}
+}*/
 
 :root {
   --logo-font: "Raleway", sans-serif;
@@ -55,7 +55,6 @@ img {
 .img {
   display: block;
   max-width: 100%;
-  height: auto;
   padding: 0;
   margin: 0;
 }
@@ -376,7 +375,6 @@ portfolio main ==========================================================
   border-style: hidden;
   border-radius: 4px;
   cursor: pointer;
-  /*height: 38px; */
   width: auto;
   padding: 6px 22px;
   color: var(--main-color);
@@ -402,7 +400,6 @@ portfolio main ==========================================================
 
 .exemple-gallery > li {
   max-width: 370px;
-  /*max-height: 404px;*/
   background: var(--white-color);
   border: 1px solid var(--card-border-color);
   box-sizing: border-box;
@@ -416,12 +413,10 @@ portfolio main ==========================================================
   text-decoration: none;
   color: var(--main-color);
   max-width: 370px;
-  /*max-height: 404px;*/
 }
 
 .link img {
   max-width: 370px;
-  /*max-height: 294px;*/
   margin: -1px;
 }
 
@@ -430,10 +425,14 @@ portfolio main ==========================================================
   padding: 20px 24px;
 }
 .exemple-gallery h3 {
-  display: inline-block;
+  line-height: 2;
+  height: 36px; /* ! if reset - it become 32px */
+  display: block;
   margin-bottom: 4px;
 }
 .exemple-gallery p {
+  line-height: 1.9;
+  height: 30px; /* ! if reset - it become 26px */
   color: var(--main-gray-color);
 }
 
@@ -444,7 +443,7 @@ footer ==================================================================
   color: var(--white-color);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   background-color: var(--background-dark-color);
 }
