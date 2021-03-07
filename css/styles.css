@@ -277,6 +277,7 @@ index main ==============================================================
   letter-spacing: 0.03em;
   width: 270px;
   height: 75px;
+  color: var(--main-gray-color);
 }
 
 /*specialization*/
@@ -293,6 +294,7 @@ index main ==============================================================
 /*team*/
 .team-container {
   flex-wrap: wrap;
+  padding-top: var(--big-padding);
   padding-bottom: var(--big-padding);
 }
 
