@@ -17,6 +17,9 @@
   --header-border-color: #ececec;
   --btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --big-padding: 94px;
   --list-gap: 30px;
 }
 
@@ -50,11 +53,15 @@ img {
 }
 
 .img {
-  display: flex;
+  display: block;
   max-width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
+}
+
+li {
+  list-style: none;
 }
 
 /*container*/
@@ -88,12 +95,17 @@ img {
 .logo:focus {
   outline-color: var(--brand-color);
 }
+
 /*h2 title*/
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 /*hidden title*/
@@ -138,7 +150,6 @@ header .container {
   line-height: 1.15;
   letter-spacing: 0.02em;
   font-style: normal;
-  list-style: none;
   flex-wrap: wrap;
   align-items: center;
   max-height: 16px;
@@ -189,8 +200,29 @@ index main ==============================================================
   text-align: center;
   color: var(--white-color);
   width: 696px;
-  height: 120px;
+  max-height: 120px;
 }
+
+.hero .container {
+  flex-direction: column;
+  max-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-container > h1 {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hero-container button {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .buttun-order {
   font-style: normal;
   font-weight: 700;
@@ -209,11 +241,25 @@ index main ==============================================================
 }
 
 /*features*/
-.features-list > li {
-  width: 270px;
-  height: 101px;
-  list-style: none;
+.features-container {
+  flex-wrap: wrap;
+  padding-top: var(--big-padding);
+  padding-bottom: var(--big-padding);
 }
+
+.features-list {
+  margin-left: calc(-1 * var(--list-gap));
+  max-height: 101px;
+}
+
+.features-list > li {
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 270px;
+  margin-left: var(--list-gap);
+  flex-basis: calc(100% / 4);
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -221,6 +267,7 @@ index main ==============================================================
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 10px;
 }
 .features-text {
   font-style: normal;
@@ -233,30 +280,61 @@ index main ==============================================================
 }
 
 /*specialization*/
+.specialization-container {
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: var(--big-padding);
+}
+
 .specialization-list {
-  list-style: none;
+  justify-content: space-between;
 }
 
 /*team*/
+.team-container {
+  flex-wrap: wrap;
+  padding-bottom: var(--big-padding);
+}
+
 .team {
   background-color: var(--background-gray-color);
 }
-.team-list > li {
-  box-sizing: content-box;
-  width: 270px;
-  height: 368px;
-  background: var(--white-color);
-  list-style: none;
+
+.team-list {
+  margin-left: calc(-1 * var(--list-gap));
 }
+
+.team-list > li {
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 270px;
+  max-height: 368px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow);
+  margin-left: var(--list-gap);
+  flex-basis: calc(100% / 4);
+  background: var(--white-color);
+}
+
+.team-list .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 10px;
+  height: 19px;
 }
 .team-text {
+  justify-content: center;
   color: var(--main-gray-color);
   text-align: center;
+  height: 19px;
 }
 
 /*
@@ -264,13 +342,12 @@ portfolio main ==========================================================
 */
 .exemples-container {
   flex-direction: column;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--big-padding);
+  padding-bottom: var(--big-padding);
 }
 
 /*buttons*/
 .exemples-container .filter-buttons {
-  list-style: none;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -321,7 +398,6 @@ portfolio main ==========================================================
   background: var(--white-color);
   border: 1px solid var(--card-border-color);
   box-sizing: border-box;
-  list-style: none;
   margin-left: var(--list-gap);
   margin-top: var(--list-gap);
   flex-basis: calc(100% / 3);
@@ -346,6 +422,7 @@ portfolio main ==========================================================
   padding: 20px 24px;
 }
 .exemple-gallery h3 {
+  display: inline-block;
   height: 36px;
   margin-bottom: 4px;
 }
@@ -374,7 +451,6 @@ footer ==================================================================
 }
 
 .contacts-list {
-  list-style: none;
   flex-direction: column;
   margin-top: 20px;
 }
