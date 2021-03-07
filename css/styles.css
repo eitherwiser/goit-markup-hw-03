@@ -78,6 +78,7 @@ li {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   font-style: normal;
   text-decoration: none;
   color: var(--brand-color);
@@ -401,6 +402,7 @@ portfolio main ==========================================================
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .exemple-gallery p {
   font-weight: 400;
@@ -417,7 +419,6 @@ footer ==================================================================
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
   color: var(--white-color);
   background-color: var(--background-dark-color);
 }
